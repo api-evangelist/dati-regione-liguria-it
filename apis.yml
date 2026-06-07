@@ -1,0 +1,59 @@
+aid: dati-regione-liguria-it
+name: Liguria Open Data
+description: >-
+  Liguria Open Data is a regional government open-data portal for Italy running CKAN.
+  It exposes the CKAN catalog API over approximately 123 datasets.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/dati-regione-liguria-it/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Open Data Portal
+  - Regional Government
+  - Italy
+created: '2026-06-07'
+modified: '2026-06-07'
+specificationVersion: '0.19'
+apis:
+  - aid: dati-regione-liguria-it:catalog
+    name: Liguria Open Data CKAN Action API
+    description: >-
+      CKAN Action API for Liguria Open Data, ~123 datasets. Base URL https://dati.regione.liguria.it/api/3/action/.
+    humanURL: https://dati.regione.liguria.it
+    baseURL: https://dati.regione.liguria.it/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://dati.regione.liguria.it
+      - type: x-api-endpoint
+        url: https://dati.regione.liguria.it/api/3/action/status_show
+      - type: x-ckan-version
+        value: '2.9.9'
+common:
+  - type: Website
+    url: https://dati.regione.liguria.it
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/dati-regione-liguria-it-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/dati-regione-liguria-it-rate-limits.yml
+  - type: FinOps
+    url: finops/dati-regione-liguria-it-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
